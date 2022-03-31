@@ -1,8 +1,11 @@
 from kivy.app import App
-from kivy.uix.widget import Widget
+from kivy.uix.boxlayout import BoxLayout
+from kivy.lang import Builder
 
 
-class AppInterface(Widget):
+Builder.load_file("flight_plan.kv")
+
+class AppInterface(BoxLayout):
     pass
 
 
