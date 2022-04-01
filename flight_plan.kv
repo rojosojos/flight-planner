@@ -9,6 +9,31 @@
             title: "Inputs"
             collapse: 0
 
+            # add tabs for inputs
+            TabbedPanel:
+                # no default tab -- define custom Tabs
+                do_default_tab: False
+
+                # add custom tabs
+                TabbedPanelItem:
+                    text: "Aircraft Info"
+
+                    BoxLayout:
+                        orientation:'vertical'
+
+                        Label:
+                            text:'7 .Aircraft ID'
+                        Label:
+                            text:'9. number (blank if single, 2 if form)'
+                        Label:
+                            text:'9. aircraft type ???'
+                        Label:
+                            text:'9. wake turb'
+
+                TabbedPanelItem:
+                    text: "Plan Info"
+                        
+
         AccordionItem:
             title: "DD-1801 (ICAO)"
             collapse: 1
